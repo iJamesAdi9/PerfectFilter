@@ -1,2 +1,2 @@
 
-Copyright (C) 2022 AKAZAR ZEMO
+Copyright (C) 2022 Wachiravit Teerasarn
