@@ -13,6 +13,8 @@
 		1A4BDA1A2903215F005234B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BDA182903215F005234B7 /* Main.storyboard */; };
 		1A4BDA1C29032161005234B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BDA1B29032161005234B7 /* Assets.xcassets */; };
 		1A4BDA1F29032161005234B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4BDA1D29032161005234B7 /* LaunchScreen.storyboard */; };
+		1A4BDA2829032419005234B7 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 1A4BDA2729032419005234B7 /* Fakery */; };
+		1A4BDA2A29032560005234B7 /* Infomation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4BDA2929032560005234B7 /* Infomation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		1A4BDA1B29032161005234B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4BDA1E29032161005234B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A4BDA2029032161005234B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A4BDA2929032560005234B7 /* Infomation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infomation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4BDA2829032419005234B7 /* Fakery in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +62,7 @@
 			children = (
 				1A4BDA122903215F005234B7 /* AppDelegate.swift */,
 				1A4BDA142903215F005234B7 /* SceneDelegate.swift */,
+				1A4BDA2B2903259E005234B7 /* Model */,
 				1A4BDA162903215F005234B7 /* ViewController.swift */,
 				1A4BDA182903215F005234B7 /* Main.storyboard */,
 				1A4BDA1B29032161005234B7 /* Assets.xcassets */,
@@ -65,6 +70,14 @@
 				1A4BDA2029032161005234B7 /* Info.plist */,
 			);
 			path = PerfectFilter;
+			sourceTree = "<group>";
+		};
+		1A4BDA2B2903259E005234B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A4BDA2929032560005234B7 /* Infomation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +96,9 @@
 			dependencies = (
 			);
 			name = PerfectFilter;
+			packageProductDependencies = (
+				1A4BDA2729032419005234B7 /* Fakery */,
+			);
 			productName = PerfectFilter;
 			productReference = 1A4BDA0F2903215F005234B7 /* PerfectFilter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 1A4BDA062903215F005234B7;
+			packageReferences = (
+				1A4BDA2629032419005234B7 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
 			productRefGroup = 1A4BDA102903215F005234B7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +160,7 @@
 				1A4BDA172903215F005234B7 /* ViewController.swift in Sources */,
 				1A4BDA132903215F005234B7 /* AppDelegate.swift in Sources */,
 				1A4BDA152903215F005234B7 /* SceneDelegate.swift in Sources */,
+				1A4BDA2A29032560005234B7 /* Infomation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A4BDA2629032419005234B7 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A4BDA2729032419005234B7 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A4BDA2629032419005234B7 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1A4BDA072903215F005234B7 /* Project object */;
 }
